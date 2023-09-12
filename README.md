@@ -18,23 +18,27 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
         2. Converting integer values to corresponding categorical values 
         3. Checking columns have same values or not
         4. Remove columns which are not required for analysis
-  2. Visualising the data - univariate, bivariate analysis
-     -  Craeted different plots to understand the relationship (specifically to understant linear relationship) between differnt sets of variables 
+  2. Visualising the data - 
+     -  Created different plots to understand the relationship (specifically to understant linear relationship) between differnt sets of variables 
   3. Data preparation for Modeling
         1. Converting categorical variables to dummy variables - so that they become suitable for model building 
         2. Splitting data into Training and Test sets at 70% (for training data) and 30% (for evaluating data) ratio respectively
         3. Rescaling features so that variables can have comparable scale using Min-Max scaling technique
   4. Building a linear model
-      - Started with 10 variables using RFE technique and dropped unnecessary variables having high VIF (>5), high p (>0.05) one by one after checking p and VIF everytime.
-      - Dropped variables having very low magnitude after checking p and VIF 
-  6. Resudual analysis of the training data
+      - Linear model was build using statsmodels 
+      - Started with 10 variables using sklearn RFE technique and dropped unnecessary variables having high VIF (>5), high p (>0.05) one by one after checking p and VIF everytime.
+      - Dropped variables having very low magnitude one by one after checking p and VIF 
+  5. Resudual analysis of the training data
       - Residual analysis done to validate residuals are normally distributed with mean at 0
       - Checked y_predict vs y based on the training database to validate error terms are normally distributed (homoscedasticity) or not
-  8. Making prediction using final model
+  6. Making prediction using final model
       - Applied model validated on training dataset (having 81% as R2 and 1.999 as Durbin-Watson) on test dataset
-  10. Model evaluation
+  7. Model evaluation
       - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of statsmodel R2
-  12. Summary
+      - Checked y_predict vs y based on the test dataset
+      - Did residual analysis on test dataset
+  8. Summary
+      - Created final linear regression equation 
 
 
    
