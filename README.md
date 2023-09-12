@@ -9,27 +9,26 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
-- The main objective of this analysis is to create a linear regression model to understand which independent variables/attributes (predictor) are mostly impacting outcome variable "cnt"
+- The main objective of this analysis is to create a linear regression model to understand which independent variables/attributes (predictor) are mostly impacting outcome variable "cnt" (count of total rental bikes)
 - Steps followed for this analysis: 
   1. Reading and cleaning the Data
-  2. Visualising the data - univariate, bivariate analysis
-  3. Data preparation for Modeling
-  4. Splitting data into Training and Test sets
-  5. Rescaling features
-  6. Building a linear model
-  7. Resudual analysis of the training data
-  8. Making prediction using final model
-  9. Model evaluation
+     - Input dataset used for this analysis had 730 rows and 16 columns
+     - The data cleaning step included
+        1. Rounding up digit after decimal  by 3 
+        2. Converting integer values to corresponding categorical values 
+        3. Checking columns have same values or not
+        4. Remove columns which are not required for analysis
+  3. Visualising the data - univariate, bivariate analysis
+  4. Data preparation for Modeling
+  5. Splitting data into Training and Test sets
+  6. Rescaling features
+  7. Building a linear model
+  8. Resudual analysis of the training data
+  9. Making prediction using final model
+  10. Model evaluation
  10. Summary
-- Input dataset used for this analysis had 39717 rows and 111 columns
-- The data cleaning step included
-  1. dropping cloumns having no value
-  2. checking for duplicate data
-  3. reformatting column value (by changing data type,removing unwanted patterns etc.) suitabe for data analysis
-  4. removing outliers
-  5. creating separate month & year column from issue_d
-  6. removing columns having same value
-- The no. of rows and columns reduced to 37398 and 21 respectively, This reduced dataset was used for further analysis
+
+ - The no. of rows and columns reduced to 37398 and 21 respectively, This reduced dataset was used for further analysis
    
  
 
