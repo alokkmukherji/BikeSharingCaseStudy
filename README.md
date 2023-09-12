@@ -27,14 +27,16 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
   4. Building a linear model
       - Linear model was build using statsmodels 
       - Started with 10 variables using sklearn RFE technique and dropped unnecessary variables having high VIF (>5), high p (>0.05) one by one after checking p and VIF everytime.
-      - Dropped variables having very low magnitude one by one after checking p and VIF 
+      - Dropped variables having very low magnitude one by one after checking p, VIF and Adjusted R2
+      - FInal model having 81% as R2 and 1.999 as Durbin-Watson
   5. Resudual analysis of the training data
+      - Applied model validated on training dataset
       - Residual analysis done to validate residuals are normally distributed with mean at 0
       - Checked y_predict vs y based on the training database to validate error terms are normally distributed (homoscedasticity) or not
   6. Making prediction using final model
-      - Applied model validated on training dataset (having 81% as R2 and 1.999 as Durbin-Watson) on test dataset
+      - Final model applied on test dataset
   7. Model evaluation
-      - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of statsmodel R2
+      - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of statsmodel R2 generated based on training dataset
       - Checked y_predict vs y based on the test dataset
       - Did residual analysis on test dataset
   8. Summary
