@@ -36,7 +36,7 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
   6. Making prediction using final model
       - Final model applied on test dataset
   7. Model evaluation
-      - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of statsmodel R2 generated based on training dataset
+      - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of R2 generated based on training dataset
       - Checked y_predict vs y based on the test dataset
       - Did residual analysis on test dataset
   8. Summary
