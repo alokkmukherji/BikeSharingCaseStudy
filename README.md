@@ -44,7 +44,7 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
 
 ## Conclusions
  -  Increase in temp causes an increase in bike rent when all other predictors are not changing
- -  Bike rent inreases with increase in year when all other predictors are not changing
+ -  Bike rent increases with increase in year when all other predictors are not changing
 -   Increase in Light Snow/Light Rain + Thunderstorm + Scattered clouds/Light Rain + Scattered clouds causes a decrease in bike rent when all other predictors are not changing
 -   Increase in windspeed causes a decrease in bike rent when all other predictors not not changing
 -   During spring, there is a decrease in bike rent when all other predictor is not changing
@@ -54,11 +54,11 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
 
 
 ## Technologies Used
-- Python 3.0 (Python lib used - numpy, pandas, seaborn, matplotlib)
+- Python 3.0 (Python lib used - numpy, pandas, seaborn, matplotlib, sklearn, statsmodels)
 - Jupyter notebook
 - Exploratory Data Anlysis (EDA) Concept
-- Linear regression (single and multiple)
-- Inferential Statistics
+- Linear regression (single and multiple) Concept
+- Inferential Statistics Concept
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
