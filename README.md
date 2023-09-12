@@ -36,7 +36,7 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
       - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of statsmodel R2
   12. Summary
 
- - The no. of rows and columns reduced to 37398 and 21 respectively, This reduced dataset was used for further analysis
+
    
  
 
