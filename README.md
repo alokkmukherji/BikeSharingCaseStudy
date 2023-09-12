@@ -19,7 +19,7 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
         3. Checking columns have same values or not
         4. Remove columns which are not required for analysis
   2. Visualising the data - 
-     -  Created different plots to understand the relationship (specifically to understant linear relationship) between different sets of variables 
+     -  Created different plots to understand the relationship (specifically to understand linear relationship) between different sets of variables 
   3. Data preparation for Modeling
         1. Converting categorical variables to dummy variables - so that they become suitable for model building 
         2. Splitting data into Training and Test sets at 70% (for training data) and 30% (for evaluating data) ratio respectively
