@@ -32,13 +32,13 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
   5. Resudual analysis of the training data
       - Applied model validated on training dataset
       - Residual analysis done to validate residuals are normally distributed with mean at 0
-      - Checked y_predict vs y based on the training database to validate error terms are normally distributed (homoscedasticity) or not
+      - Checked y_predict vs y based on the training database to validate linear distribution (homoscedasticity) between the two 
   6. Making prediction using final model
       - Final model applied on test dataset
   7. Model evaluation
-      - Model is evaluated using sklearn r2_score which gave R2 value which is within 5% of R2 generated based on training dataset
-      - Checked y_predict vs y based on the test dataset
-      - Did residual analysis on test dataset
+      - Model is evaluated based on test data using sklearn r2_score which gave R2 value which is within 5% of R2 generated based on training dataset
+      - Checked y_predict vs y based on the test database to validate linear distribution (homoscedasticity) between the two
+      - Did residual analysis on test dataset to validate residuals are normally distributed with mean at 0
   8. Summary
       - Created final linear regression equation 
 
