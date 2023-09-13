@@ -23,12 +23,12 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
   3. Data preparation for Modeling
         1. Converting categorical variables to dummy variables - so that they become suitable for model building 
         2. Splitting data into Training and Test sets at 70% (for training data) and 30% (for evaluating data) ratio respectively
-        3. Rescaling features so that variables can have comparable scale using Min-Max scaling technique
+        3. Rescaling features using Min-Max scaling technique so that variables can have comparable scale 
   4. Building a linear model
       - Linear model was build using statsmodels 
-      - Started with 10 variables using sklearn RFE technique and dropped unnecessary variables having high VIF (>5), high p (>0.05) one by one after checking p and VIF everytime.
-      - Dropped variables having coefficient of very low magnitude one by one after checking p, VIF and Adjusted R2
-      - FInal model having 81% as R2 and 1.999 as Durbin-Watson
+      - Started with 10 variables using sklearn RFE technique and dropped variables having high (>5) Variance Inflation Factor (VIF) and high p (>0.05) one by one after checking p and VIF everytime.
+      - Dropped variables having coefficient of very low magnitude one by one after checking p, VIF and Adjusted R2 once variables having high VIF and high p value were cleaned up
+      - Final model had R2 as 81% and Durbin-Watson as 1.999
   5. Resudual analysis of the training data
       - Applied model validated on training dataset
       - Residual analysis done to validate residuals are normally distributed with mean at 0
@@ -40,7 +40,7 @@ US bike-sharing provider BoomBikes has observed dip in revenue due to Covid-19. 
       - Checked y_predict vs y based on the test database to validate linear distribution (homoscedasticity) between the two
       - Did residual analysis on test dataset to validate residuals are normally distributed with mean at 0
   8. Summary
-      - Created final linear regression equation 
+      - Created final linear regression equation and understood the impact of the drivers on bike sharing revenue 
 
 
    
